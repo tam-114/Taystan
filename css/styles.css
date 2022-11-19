@@ -40,7 +40,11 @@ ul {
 @media only screen and (max-width: 700px) {
     .services-row {
         flex-direction: column;
-        padding: 60px 0 0 60px!important;
+        padding: 40px 25px 0 25px;
+    }
+
+    .services-column {
+        padding: 60px!important;
     }
 
     .app-text {
@@ -57,27 +61,33 @@ ul {
     .banner {
         left: 0!important;
         flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        margin-left: 0!important;
     }
 
     .projects-flex {
         flex-direction: column;
-        width: 50%;
+        width: 75%;
         margin: 0 auto!important;
         padding-top: 40px;
-        /* margin: 0 auto!important; */
     }
 
     .social-icons {
           display: none;
     }
 
+    .contact-row {
+        flex-direction: column;
+    }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
     .app-picture img {
         margin-left: 0!important;
-        width: 35vw!important;
+        /* width: 35vw!important; */
+        max-width: 100%!important;
     }
 
 }
@@ -109,6 +119,7 @@ ul {
         display: block!important;
         text-align: left!important;
         margin-bottom: 10px!important;
+        padding-left: 20px!important;
       }
 
       .header .navBar {
@@ -116,11 +127,21 @@ ul {
         padding: 10px 0 10px 0!important;
         margin: 0 0 10px 0!important;
       }
+
+      .contact-btn {
+        background-color: transparent!important;
+      }
  }
   
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
+    .services-column {
+        padding: 60px!important;
+    }
 
+    .projects-flex {
+        margin: 0 10% 0 10%!important;
+    }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
@@ -150,7 +171,7 @@ ul {
 
 .navBar a {
     /* float: left; */
-    color: grey;
+    color: var(--black);
     /* padding: 14px 16px; */
     text-decoration: none;
     font-size: 17px;
@@ -165,22 +186,6 @@ ul {
     width: 78px;
     height: 36px;
 }
-
-/* .menu {
-    display: flex;
-    flex-wrap: wrap;
-    cursor: pointer;
-    font-size: 19px;
-    font-weight: 700;
-    line-height: 80px;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.menu-items {
-    padding: 0 25px;
-    color: var(---black);
-} */
 
 .contact-btn {
     display: block;
@@ -207,12 +212,9 @@ ul {
     width: 100%;
     height: 70%;
     position: relative;
-    /* top: 25%; */
-    /* left: 150px; */
     margin-left: 100px;
     margin-top: 100px;
     display: flex;
-    /* color: #fff; */
 }
 
 .app-text {
@@ -247,23 +249,24 @@ ul {
     /* padding-right: 250px; */
 }
 
+.app-picture {
+    justify-content: center;
+    align-self: center;
+}
 
 .app-picture img {
-    /* width: 500px; */
-    width: 60vw;
+    /* width: 40vw; */
+    max-width: 100%;
+    width: 750px;
     height: auto;
-    /* max-width: 500px; */
-    /* padding-top: 200px; */
     margin-top: 100px;
-    /* float: right; */
-    /* clear: left; */
 }
 
 .btn-group {
    display: flex; 
    width: 100%;
    position: relative;
-   flex-wrap: wrap;
+   /* flex-wrap: wrap; */
 }
 
 
@@ -321,17 +324,18 @@ ul {
 /* Services 3-column */
 .services-row {
     display: flex;
+    align-content: center;
+    justify-content: center;
     text-align: center;
     margin: 0 auto;
     position: relative;
-    /* padding-top: 100px; */
+    /* margin-top: 60px; */
     padding: 75px 50px 20px 50px;
-    /* top: 225%; */
 }
 
 .services-column {
     flex: 33%;
-    padding: 20px;
+    padding: 120px;
 }
 
 .services-column img {
@@ -347,7 +351,7 @@ ul {
 .services-column p {
     font-weight: 700;
     font-size: 15px;
-    padding: 0 20px 0 20px;
+    /* padding: 0 20px 0 20px; */
     color: var(---dark-gray);
 }
 
@@ -395,7 +399,7 @@ ul {
 
 .project-item {
     flex: 1;
-    /* padding-left: 20px; */
+    padding-bottom: 30px;
 }
 
 .btn-project {
@@ -418,20 +422,12 @@ p.padding {
 
 /* Form */
 
-.contact-form {
+/* .contact-form {
     margin-top: 10%;
-}
+} */
 
-form {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    /* width: 100%; */
-    /* max-width: 600px; */
-}
 
-label {
+/* label {
     padding: 10px 0 10px 0;
 }
 
@@ -439,7 +435,126 @@ input, textarea {
     width: 600px;
     border: 1px solid var(---gray);
     border-radius: 10px;
+} */
+
+
+.label-text {
+    font-weight: 700;
+    /* color: #102a43; */
+    line-height: 35px;
+    line-height: 2.5rem;
+    font-size: 16px;
+    background-color: var(---white);
+    /* text-transform: uppercase; */
 }
 
+input[type="submit"] {
+    background: var(---copper);
+    color: var(---white);
+    font-weight: 700;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    margin-top: 1.3em;
+}
 
+.contact-container {
+    display: flex;
+    /* align-items: center;
+    justify-content: center; */
+    flex-direction: column;
+    margin: 5em auto;
+}
 
+form {
+    background-color: var(---white);
+    padding-top: 40px;
+    padding-right: 40px;
+    padding-bottom: 40px;
+    padding-left: 40px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.required-star {
+    color: #fc4366;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 9px 20px;
+    border: 1px solid #e1e2eb;
+    background-color: #fff;
+    color: #102a43;
+    caret-color: #829ab1;
+    box-sizing: border-box;
+    font-size: 18px;
+    font-size: 1rem;
+    line-height: 29px;
+    line-height: 2rem;
+    box-shadow: inset 0 2px 4px 0 rgba(206, 209, 224, 0.2);
+    border-radius: 3px;
+    line-height: 29px;
+    line-height: 2rem;
+}
+
+.contact-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 100px 20px 100px;
+}
+
+.contact-col {
+    flex: 50%;
+}
+
+.contact-info {
+    padding: 20px;
+    text-align: center;
+}
+
+.contact-subtitle {
+    text-transform: uppercase;
+    font-size: 12px;
+    color: var(---copper);
+    /* padding-bottom: 10px; */
+}
+
+.contact-col h1 {
+    padding-bottom: 10px;
+}
+
+.contact-col p {
+    font-size: 20px;
+}
+
+.contact-socials {
+    padding-top: 20px;
+    font-size: 30px;
+}
+
+.contact-socials span a {
+    color: var(---dark-gray);
+    padding: 10px;
+}
+
+/* Footer */
+.footer-container {
+    position: relative;
+    bottom: 0;
+    height: 30vh;
+    background-color: var(---dark-gray);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.footer-col, .footer-col p {
+    flex: 33%;
+    background-color: var(---dark-gray);
+    color: var(---white);
+    text-align: center;
+}
