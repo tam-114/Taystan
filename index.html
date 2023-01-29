@@ -11,6 +11,12 @@
     <!-- CSS -->
     <link rel="stylesheet" href="css/styles.css" type="text/css">
 
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
+
     <!-- JS -->
     <script src="script/script.js"></script>
 
@@ -21,11 +27,9 @@
 
     <!-- Font/Icon Library -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-
 </head>
 <body>
-    <div class="header">
+    <!-- <div class="header">
         <div class="navBar" id="mainNavBar">
             <a href="#">
                 <img src="/images/taystan-logo.png" alt="Taystan Logo">
@@ -36,17 +40,41 @@
             <a href="#contact" class="contact-btn">Contact</a>
             <a href="javascript:void(0);" class="icon" onClick="openHamburgerMenu()">&#9776;</a>
         </div>
-    </div>
+    </div> -->
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light"><!--bg-light-->
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="/images/taystan-logo.png" alt="Taystan Logo">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav ms-auto">
+                    <a class="nav-link nav-menu ms-1 me-1" aria-current="page" href="#home">Home</a>
+                    <a class="nav-link nav-menu ms-1 me-1" href="#services">Services</a>
+                    <a class="nav-link nav-menu ms-1 me-3" href="#projects">Projects</a>
+                    <a href="#contact" style="color: white; text-decoration: none;">
+                      <button class="btn rounded-pill contact-btn me-2 w-100" type="button">
+                        Contact
+                      </button>
+                    </a>
+            </div>
+          </div>
+        </div>
+    </nav>
 
-    <div class="banner">
-        <div class="app-text">
+    <!-- Hero -->
+    <div class="container row row-cols-1 row-cols-md-2 d-flex justify-content-center align-items-center ps-md-5 ms-md-5 mt-5">
+        <div class="col app-text">
             <h3>Taystan.Design</h3>
             <h1>Freelance<br>Web<br>Designer</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus vero earum ratione architecto sit hic sed excepturi modi, ut ea?</p>
+            <p>I specialize in creating visually appealing and user-friendly websites for businesses and individuals. Let's work together to make your online presence stand out!</p>
 
-            <div class="btn-group">
-                <div class="signup-btn">Get in touch</div>
-                <div class="play-btn">
+            <div class="btn-group row">
+                <div class="signup-btn col">Get in touch</div>
+                <div class="play-btn col">
                     <div class="play-btn-inner">
                         <i class="fa-solid fa-play"></i>
                     </div>
@@ -54,76 +82,82 @@
                 </div>
             </div>
         </div>
-        <div class="app-picture">
-            <img src="images/undraw_landing_page_re_6xev.svg" alt="Undraw Illustration Landing Page" >
+        <div class="col align-self-center">
+            <img src="images/undraw_landing_page_re_6xev.svg" alt="Undraw Illustration Landing Page" class="img-fluid ps-md-3 pt-xs" width="100%" height="auto">
         </div>
     </div>
 
-    <div class="services-row">
-        <div class="services-column">
-            <img src="images/coding.png" alt="Coding icon created by Triangle Squad - Flaticon">
-            <h1>Web Development</h1>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima atque animi obcaecati impedit, velit iste explicabo iure distinctio assumenda. Dolorum.</p>
+
+    <div class="container row row-cols-1 row-cols-md-3 gx-5 d-flex justify-content-center align-items-center text-center pt-5 mt-5 ms-md-5 ps-md-5" >
+        <div class="col">
+            <img src="images/coding.png" alt="Coding icon created by Triangle Squad - Flaticon" class="img-fluid pb-2" width="60px" height="auto">
+            <h1 class="services-column">Web Development</h1>
+            <p>Offering comprehensive web development services including design, development, and maintenance to provide ongoing support to keep your website updated and running smoothly.</p>
         </div>
-        <div class="services-column">
-            <img src="images/responsive-design.png" alt="Responsive design icon created by Triangle Squad - Flaticon">
-            <h1>Responsive Design</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium omnis natus labore fugiat ullam perspiciatis commodi aliquid ducimus eius reiciendis!</p>
+        <div class="col">
+            <img src="images/responsive-design.png" alt="Responsive design icon created by Triangle Squad - Flaticon" class="img-fluid pb-2"  width="60px" height="auto">
+            <h1 class="services-column">Responsive Design</h1>
+            <p>Creating visually appealing and responsive websites tailored to your specific needs and goals for the overall look and feel of a website that effectively presents your brand and message.</p>
         </div>
-        <div class="services-column">
-            <img src="images/communication.png" alt="Communciation icon created by Triangle Squad - Flaticon">
-            <h1>Communication</h1>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim reiciendis ipsum ducimus natus, perferendis ex ea adipisci optio consequatur deserunt.</p>
+        <div class="col">
+            <img src="images/communication.png" alt="Communciation icon created by Triangle Squad - Flaticon" class="img-fluid pb-2"  width="60px" height="auto">
+            <h1 class="services-column">Communication</h1>
+            <p>Working closely to deliver a final product that exceeds expectations and regular updates on the progress of the project. Ensuring a clear plan for managing expectations and keeping the project on schedule.</p>
         </div>
+
     </div>
 
-    <!-- row 1 -->
-    <div class="projects-flex">
-        <div class="project-item" style="padding-right: 20px;">
-            <img src="/images/btc-lg-img.png" alt="Black Therapist and Company graphic" class="projects-img">
-            <!-- Add srcset for mobile -->
+    <!-- Projects: Row 1 -->
+    <div class="container row row-cols-1 d-flex justify-content-center align-items-center pt-5 mt-5 ms-md-5 ps-md-5">
+        <div class="col-md-6">
+            <img src="/images/btc-lg-img.png" alt="Black Therapist and Company graphic" class="img-fluid projects-img"  height="auto">
         </div>
-        <div class="project-item">
+        <div class="col-md-6 ps-md-5 p-4">
             <h1>Black Therapist & Company</h1>
-            <p class="padding">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit dolore repellat harum eligendi. Voluptatem architecto officiis dolores rem earum eos quia quo enim sed quam? Deserunt distinctio reprehenderit voluptatem dolores.</p>
+            <br>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit dolore repellat harum eligendi. Voluptatem architecto officiis dolores rem earum eos quia quo enim sed quam? Deserunt distinctio reprehenderit voluptatem dolores.</p>
+            <br>
             <a href="#" role="button" class="btn-project">View Project</a>
         </div>
     </div>
 
-    <!-- row 2 -->
-    <div class="projects-flex">
-        <div class="project-item">
+    <!-- Projects: Row 2 -->
+    <div class="container row row-cols-1 d-flex justify-content-center align-items-center pt-5 mt-5 ms-md-5 ps-md-5">
+        <div class="col-md-6 ps-md-5 p-4 order-xs-1">
             <h1>PTR Staffing</h1>
-            <p class="padding">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae voluptatem omnis praesentium nemo fugit quaerat error culpa doloremque vitae. Ipsam animi praesentium quaerat tempora magnam illum iure tenetur expedita placeat.</p>
+            <br>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit dolore repellat harum eligendi. Voluptatem architecto officiis dolores rem earum eos quia quo enim sed quam? Deserunt distinctio reprehenderit voluptatem dolores.</p>
+            <br>
             <a href="#" role="button" class="btn-project">View Project</a>
         </div>
-        <div class="project-item">
-            <img src="/images/ptr-lg-img.png" alt="PTR Staffing Graphic" class="projects-img">
-            <!-- Add srcset for mobile -->
+        <div class="col-md-6 order-xs-0">
+            <img src="/images/ptr-lg-img.png" alt="PTR Staffing graphic" class="img-fluid projects-img"  height="auto">
         </div>
     </div>
 
-    <!-- row 3 -->
-    <div class="projects-flex">
-        <div class="project-item" style="padding-right: 20px;">
-            <img src="/images/ebt-lg-img.png" alt="Eastburn Trucking & Logistics graphic" class="projects-img">
-            <!-- Add srcset for mobile -->
+    <!-- Projects: Row 3 -->
+    <div class="container row row-cols-1 d-flex justify-content-center align-items-center pt-5 mt-5 ms-md-5 ps-md-5">
+        <div class="col-md-6">
+            <img src="/images/ebt-lg-img.png" alt="Eastburn Trucking & Logistics graphic" class="img-fluid projects-img" height="auto">
         </div>
-        <div class="project-item">
+        <div class="col-md-6 ps-md-5 p-4">
             <h1>Eastburn Trucking & Logistics</h1>
-            <p class="padding">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus provident quam amet consequatur atque molestiae dolores ipsam nesciunt voluptas, eum possimus repellat praesentium sed necessitatibus, exercitationem aspernatur voluptates repudiandae laboriosam!</p>
+            <br>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit dolore repellat harum eligendi. Voluptatem architecto officiis dolores rem earum eos quia quo enim sed quam? Deserunt distinctio reprehenderit voluptatem dolores.</p>
+            <br>
             <a href="#" role="button" class="btn-project">View Project</a>
         </div>
     </div>
     
+    <!-- Testimonials -->
 
     <!-- Contact Info -->
-    <div class="contact-row">
-        <div class="contact-col">
+    <div class="container row d-flex justify-content-center align-items-center ps-md-5 ms-md-5">
+        <div class="col">
             <div class="contact-container contact-info">
                 <h1 class="contact-subtitle">Get In Touch</h1>
                 <h1>Contact Me</h1>
-                <p class="contact-text" style="padding-bottom: 20px;">
+                <p class="contact-text">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia eaque soluta quo repudiandae, labore laudantium! Veritatis voluptatem numquam sapiente voluptate.
                 </p>
 
@@ -148,7 +182,7 @@
             </div> <!--end contact-info-->
         </div><!--end contact-col 1-->
 
-        <div class="contact-col">
+        <div class="col ps-5">
             <!-- Contact Form -->
             <div id="contact" class="contact-container">
                 <!-- Contact Form -->
@@ -156,17 +190,21 @@
                     <label class="label-text">
                         First & Last Name:
                         <br>
-                        <input type="text" name="name">
+                        <input type="text" name="name" class="form-control">
                     </label>
+                    <br>
+                    <br>
                     <label class="label-text">
                         Email Address:
                         <br>
-                        <input type="email" name="email">
+                        <input type="email" name="email" class="form-control">
                     </label>
+                    <br>
+                    <br>
                     <label class="label-text">
                         How can I help you?
                         <br>
-                        <textarea name="message" placeholder=" Hi Taystan..."></textarea>
+                        <textarea name="message" placeholder=" Hi Taystan..." class="form-control"></textarea>
                     </label>
                     <!-- your other form fields go here -->
                     <input type="submit"></input>    
@@ -192,12 +230,14 @@
 
     <!-- Bottom of page -->
     <div class="social-icons">
-        <ul>
+        <ul class="ps-0">
             <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
             <li><a href="#"><i class="fa-brands fa-github"></i></a></li>
             <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
         </ul>
     </div>
     <!-- End social icons/page, change icons to footer when on mobile, adjust spacing -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>

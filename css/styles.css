@@ -24,6 +24,11 @@
 html {
     margin-top: 0;
     overflow-x: hidden;
+    
+}
+
+body {
+    background-color: var(--background);
 }
 
 a {
@@ -43,9 +48,9 @@ ul {
         padding: 40px 25px 0 25px;
     }
 
-    .services-column {
+    /* .services-column {
         padding: 60px!important;
-    }
+    } */
 
     .app-text {
         width: 80%!important;
@@ -80,18 +85,27 @@ ul {
     .contact-row {
         flex-direction: column;
     }
+
+    
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
-    .app-picture img {
-        margin-left: 0!important;
+    /* .app-picture img { */
+        /* margin-left: 0!important; */
         /* width: 35vw!important; */
-        max-width: 100%!important;
+        /* max-width: 100%!important; */
     }
 
+/* } */
+@media (max-width: 400px) {
+    .order-xs-0 {
+        order: 1!important;
+    }
+    .order-xs-1 {
+        order: 2!important;
+    }
 }
-
   
  @media (max-width: 700px) {
     .navBar a:not(:first-child){
@@ -129,24 +143,52 @@ ul {
       }
 
       .contact-btn {
-        background-color: transparent!important;
-      }
+        background-color: var(---dark-gray)!important;
+    }
+
+    .social-icons {
+        display: none!important;
+    }
+
+      .app-container {
+        width: 100%;
+        max-width: 400px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .pt-xs {
+        padding-top: 20px;
+    }
+
  }
   
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-    .services-column {
+    /* .services-column {
         padding: 60px!important;
-    }
+    } */
 
     .projects-flex {
         margin: 0 10% 0 10%!important;
+    }
+
+    .app-container {
+        width: 100%;
+        max-width: 600px;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-
+    .app-container {
+        width: 100%;
+        max-width: 700px;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
 /* ------- Page Content Styling ------ */
@@ -178,6 +220,19 @@ ul {
   }
   
   .navBar a:hover{
+    color: var(---orange);
+  }
+
+  .nav-menu {
+    /* float: left; */
+    color: var(--black);
+    padding: 8px 40px!important;
+    text-decoration: none;
+    font-size: 19px!important;
+
+  }
+  
+  .nav-menu:hover{
     color: var(---orange);
   }
 
@@ -213,7 +268,7 @@ ul {
     height: 70%;
     position: relative;
     margin-left: 100px;
-    margin-top: 100px;
+    /* margin-top: 80px; */
     display: flex;
 }
 
@@ -224,7 +279,7 @@ ul {
 }
 
 .app-text h3 {
-    margin-top: 100px;
+    /* margin-top: 100px; */
     font-size: 17px;
     color: #000;
     font-weight: 400;
@@ -260,6 +315,12 @@ ul {
     width: 750px;
     height: auto;
     margin-top: 100px;
+}
+
+.app-container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .btn-group {
@@ -333,17 +394,17 @@ ul {
     padding: 75px 50px 20px 50px;
 }
 
-.services-column {
+/* .services-column {
     flex: 33%;
     padding: 120px;
-}
+} */
 
 .services-column img {
     width: 64px;
     height: 64px;
 }
 
-.services-column h1 {
+.services-column {
     font-size: 20px;
     color: var(---orange);
 }
@@ -358,9 +419,10 @@ ul {
 /* Social Media Icons */
 .social-icons {
     position: fixed;
-    right: 30px;
+    right: 0;
     top: 200px;
     z-index: 1;
+    background-color: transparent!important;
 }
 
 .social-icons ul li {
@@ -370,9 +432,11 @@ ul {
 
 .social-icons ul li a {
     color: #000;
-    padding: 10px;
+    padding-right: 30px;
+    padding-top: 5px;
     display: block;
     font-size: 29px;
+    
 }
 
 .social-icons ul li a:hover {
@@ -445,6 +509,7 @@ input, textarea {
     line-height: 2.5rem;
     font-size: 16px;
     background-color: var(---white);
+    width: 100%;
     /* text-transform: uppercase; */
 }
 
@@ -531,12 +596,17 @@ textarea {
 }
 
 .contact-socials {
-    padding-top: 20px;
+    /* padding-top: 20px; */
     font-size: 30px;
 }
 
 .contact-socials span a {
     color: var(---dark-gray);
+    padding: 10px;
+}
+
+.contact-socials span a:hover {
+    color: var(---orange);
     padding: 10px;
 }
 
