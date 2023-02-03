@@ -103,12 +103,14 @@ ul {
     }
 
 /* } */
-@media (max-width: 400px) {
+@media (max-width: 600px) {
     .order-xs-0 {
-        order: 1!important;
+        display: flex;
+        order: 0!important;
     }
     .order-xs-1 {
-        order: 2!important;
+        display: flex;
+        order: 1!important;
     }
 }
   
@@ -669,7 +671,7 @@ textarea {
 .footer-container {
     position: relative;
     bottom: 0;
-    height: 25vh;
+    height: auto;
     background-color: var(---dark-gray);
     display: flex;
     align-items: center;
@@ -698,6 +700,7 @@ textarea {
     /* padding-top: 20px; */
     font-size: 20px;
     background-color: var(---dark-gray);
+    height: auto;
 }
 
 .footer-col > .contact-socials i {
