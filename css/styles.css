@@ -33,6 +33,11 @@ body {
 
 a {
     text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    color: inherit;
 }
 
 ul {
@@ -212,34 +217,43 @@ ul {
 }
 
 .navBar a {
-    /* float: left; */
-    color: var(--black);
-    /* padding: 14px 16px; */
-    text-decoration: none;
-    font-size: 17px;
-  }
+   /* float: left; */
+   color: var(--black);
+   /* padding: 14px 16px; */
+   text-decoration: none;
+   font-size: 17px;
+}
   
-  .navBar a:hover{
+.navBar a:hover{
     color: var(---orange);
-  }
+}
 
-  .nav-menu {
-    /* float: left; */
-    color: var(--black);
-    padding: 8px 40px!important;
-    text-decoration: none;
-    font-size: 19px!important;
-
-  }
+.nav-menu {
+   /* float: left; */
+   color: var(--black);
+   padding: 8px 40px!important;
+   text-decoration: none;
+   font-size: 19px!important;
+}
   
-  .nav-menu:hover{
+.nav-menu:hover{
     color: var(---orange);
-  }
+}
 
 .logo img {
     margin-left: 100px;
     width: 78px;
     height: 36px;
+}
+
+.btn {
+    color: inherit;
+    background-color: inherit;
+}
+
+.btn:hover {
+    color: inherit;
+    background-color: inherit;
 }
 
 .contact-btn {
@@ -270,6 +284,23 @@ ul {
     margin-left: 100px;
     /* margin-top: 80px; */
     display: flex;
+}
+.project .c-title > img {
+    display: inline;
+}
+
+.project {
+    text-align: center;
+    vertical-align: middle;
+}
+
+.c-title {
+    font-family: 'Nunito', sans-serif;
+    font-size: 55px;
+    font-weight: 600;
+    position: relative;
+    top: 40px;
+    /* font-style: italic; */
 }
 
 .app-text {
@@ -330,7 +361,22 @@ ul {
    /* flex-wrap: wrap; */
 }
 
+.msg-btn {
+    display: block;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+    border-radius: 30px;
+    background-color: var(---orange);
+    padding: 15px 50px;
+    margin-right: 100px;
+    color: var(---black);
+}
 
+.msg-btn:hover {
+    color: var(---white);
+    background-color: var(---orange);
+}
 
 .btn-group .signup-btn {
     cursor: pointer;
@@ -352,6 +398,10 @@ ul {
 .btn-group .play-btn {
     /* margin-left: 40px; */
     display: inline-flex;
+}
+
+.play-btn:hover {
+    color: var(---orange);
 }
 
 .btn-group span {
@@ -407,6 +457,7 @@ ul {
 .services-column {
     font-size: 20px;
     color: var(---orange);
+    font-weight: 700;
 }
 
 .services-column p {
@@ -447,8 +498,8 @@ ul {
 
 .projects-img {
     max-width: 100%;
-    width: 760px;
-    height: 400px;
+    width: 100%;
+    height: 350px;
     margin: 0 auto;
     box-shadow: var(---dark-blue) 10px 10px;
 }
@@ -476,8 +527,8 @@ ul {
 }
 
 .btn-project:hover {
-    color: var(---gray);
-    background-color: rgb(90, 90, 90);
+    color: var(---white);
+    background-color: var(---orange);
 }
 
 p.padding {
@@ -514,12 +565,16 @@ input, textarea {
 }
 
 input[type="submit"] {
-    background: var(---copper);
+    background: var(---gray);
     color: var(---white);
     font-weight: 700;
     font-size: 1.2rem;
     border-radius: 5px;
     margin-top: 1.3em;
+}
+
+input[type="submit"]:hover {
+    background-color: var(---orange);
 }
 
 .contact-container {
@@ -583,7 +638,7 @@ textarea {
 .contact-subtitle {
     text-transform: uppercase;
     font-size: 12px;
-    color: var(---copper);
+    color: var(---orange);
     /* padding-bottom: 10px; */
 }
 
@@ -614,7 +669,7 @@ textarea {
 .footer-container {
     position: relative;
     bottom: 0;
-    height: 30vh;
+    height: 25vh;
     background-color: var(---dark-gray);
     display: flex;
     align-items: center;
@@ -622,9 +677,46 @@ textarea {
 
 }
 
-.footer-col, .footer-col p {
+.footer-col {
     flex: 33%;
     background-color: var(---dark-gray);
     color: var(---white);
     text-align: center;
+}
+
+.footer-col > *, .footer-col ul li, .footer-col ul li a {
+    background-color: var(---dark-gray);
+    color: white;
+    font-size: 20px;
+}
+
+.footer-col ul li a:hover {
+    color: var(---orange);
+}
+
+.footer-col > .contact-socials {
+    /* padding-top: 20px; */
+    font-size: 30px;
+    background-color: var(---dark-gray);
+}
+
+.footer-col > .contact-socials i {
+    background-color: var(---dark-gray);
+}
+.footer-col > .contact-socials span a {
+    color: var(---orange);
+    padding: 10px;
+    background-color: var(---dark-gray);
+}
+
+.footer-col > .contact-socials span a:hover {
+    color: var(---gray);
+    padding: 10px;
+    background-color: var(---dark-gray);
+}
+
+.copyright {
+    position: absolute;
+    bottom: 0;
+    right: 0;
 }

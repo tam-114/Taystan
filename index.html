@@ -27,6 +27,10 @@
 
     <!-- Font/Icon Library -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="images/taystan-logo.png">
+
 </head>
 <body>
     <!-- <div class="header">
@@ -66,14 +70,21 @@
     </nav>
 
     <!-- Hero -->
-    <div class="container row row-cols-1 row-cols-md-2 d-flex justify-content-center align-items-center ps-md-5 ms-md-5 mt-5">
+    <div class="container row row-cols-1 row-cols-md-2 d-flex justify-content-center align-items-center ps-md-5 ms-md-5 mt-5" id="#home">
         <div class="col app-text">
             <h3>Taystan.Design</h3>
             <h1>Freelance<br>Web<br>Designer</h1>
             <p>I specialize in creating visually appealing and user-friendly websites for businesses and individuals. Let's work together to make your online presence stand out!</p>
 
             <div class="btn-group row">
-                <div class="signup-btn col">Get in touch</div>
+                <!-- <div class="signup-btn col">Get in touch</div> -->
+                <div class="col">
+                    <a href="#contact">
+                        <button class="btn rounded-pill msg-btn me-2 w-100" type="button">
+                            Get in touch
+                        </button>
+                    </a>
+                </div>
                 <div class="play-btn col">
                     <div class="play-btn-inner">
                         <i class="fa-solid fa-play"></i>
@@ -82,12 +93,15 @@
                 </div>
             </div>
         </div>
-        <div class="col align-self-center">
-            <img src="images/undraw_landing_page_re_6xev.svg" alt="Undraw Illustration Landing Page" class="img-fluid ps-md-3 pt-xs" width="100%" height="auto">
+        <div class="col align-self-end">
+            <img src="images/undraw_landing_page_re_6xev.svg" alt="Credit: Undraw = Illustration Landing Page" class="img-fluid ps-md-3 pt-xs" width="100%" height="auto">
         </div>
     </div>
 
+<!-- <section> -->
+    <article class="pt-5">
 
+    
     <div class="container row row-cols-1 row-cols-md-3 gx-5 d-flex justify-content-center align-items-center text-center pt-5 mt-5 ms-md-5 ps-md-5" >
         <div class="col">
             <img src="images/coding.png" alt="Coding icon created by Triangle Squad - Flaticon" class="img-fluid pb-2" width="60px" height="auto">
@@ -97,7 +111,7 @@
         <div class="col">
             <img src="images/responsive-design.png" alt="Responsive design icon created by Triangle Squad - Flaticon" class="img-fluid pb-2"  width="60px" height="auto">
             <h1 class="services-column">Responsive Design</h1>
-            <p>Creating visually appealing and responsive websites tailored to your specific needs and goals for the overall look and feel of a website that effectively presents your brand and message.</p>
+            <p>Creating visually appealing and responsive websites tailored to your specific needs and goals. Creating the overall look and feel for your website that effectively represents your brand and message.</p>
         </div>
         <div class="col">
             <img src="images/communication.png" alt="Communciation icon created by Triangle Squad - Flaticon" class="img-fluid pb-2"  width="60px" height="auto">
@@ -106,18 +120,30 @@
         </div>
 
     </div>
+    </article>
+<!-- </section> -->
 
+<section class="pt-5">
+    <div class="project">
+            
+            <img src="images/undraw_project_complete_lwss.svg" alt="Credit: Undraw - Projects Complete Illustration" width="150px" height="auto" >
+    
+            <span class="c-title">Projects</span>
+    
+        
+    </div>
+</section>
     <!-- Projects: Row 1 -->
-    <div class="container row row-cols-1 d-flex justify-content-center align-items-center pt-5 mt-5 ms-md-5 ps-md-5">
+    <div class="container row row-cols-1 d-flex justify-content-center align-items-center pt-3 mt-5 ms-md-5 ps-md-5">
         <div class="col-md-6">
-            <img src="/images/btc-lg-img.png" alt="Black Therapist and Company graphic" class="img-fluid projects-img"  height="auto">
+            <img src="/images/btc-lg-img.png" alt="Black Therapist and Company graphic" class="img-fluid projects-img">
         </div>
         <div class="col-md-6 ps-md-5 p-4">
             <h1>Black Therapist & Company</h1>
             <br>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit dolore repellat harum eligendi. Voluptatem architecto officiis dolores rem earum eos quia quo enim sed quam? Deserunt distinctio reprehenderit voluptatem dolores.</p>
             <br>
-            <a href="#" role="button" class="btn-project">View Project</a>
+            <a href="https://blacktherapistandcompanypdx.com/" role="button" class="btn-project" target="_blank">View Project</a>
         </div>
     </div>
 
@@ -128,7 +154,7 @@
             <br>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit dolore repellat harum eligendi. Voluptatem architecto officiis dolores rem earum eos quia quo enim sed quam? Deserunt distinctio reprehenderit voluptatem dolores.</p>
             <br>
-            <a href="#" role="button" class="btn-project">View Project</a>
+            <a href="https://ptrstaffing.com/" role="button" class="btn-project" target="_blank">View Project</a>
         </div>
         <div class="col-md-6 order-xs-0">
             <img src="/images/ptr-lg-img.png" alt="PTR Staffing graphic" class="img-fluid projects-img"  height="auto">
@@ -145,7 +171,7 @@
             <br>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit dolore repellat harum eligendi. Voluptatem architecto officiis dolores rem earum eos quia quo enim sed quam? Deserunt distinctio reprehenderit voluptatem dolores.</p>
             <br>
-            <a href="#" role="button" class="btn-project">View Project</a>
+            <a href="https://eastburntrucking.com/" role="button" class="btn-project" target="_blank">View Project</a>
         </div>
     </div>
     
@@ -158,22 +184,22 @@
                 <h1 class="contact-subtitle">Get In Touch</h1>
                 <h1>Contact Me</h1>
                 <p class="contact-text">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia eaque soluta quo repudiandae, labore laudantium! Veritatis voluptatem numquam sapiente voluptate.
+                    If you're interested in working with me, have a project in mind or just want to say hello, I'd love to hear from you. Fill out the form or message me on my socials and I'll get back to you as soon as possible. I look forward to connecting with you!
                 </p>
 
                 <div class="contact-socials">
                     <span>
-                        <a href="#">
+                        <a href="https://linkedin.com/in/ta11ystan">
                             <i class="fa-brands fa-linkedin-in"></i>
                         </a>
                     </span>
                     <span>
-                        <a href="#">
+                        <a href="https://github.com/tam-114">
                             <i class="fa-brands fa-github"></i>
                         </a>
                     </span>
                     <span>
-                        <a href="#">
+                        <a href="https://twitter.com/@ta11ystan">
                             <i class="fa-brands fa-twitter"></i>
                         </a>
                     </span>
@@ -216,24 +242,56 @@
     <!-- Footer, add social icons -->
     <footer>
         <div class="footer-container">
-            <div class="footer-col">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus, quaerat!</p>
+            <div class="footer-col align-self-center">
+                <img src="images/taystan-logo.png" alt="Taystan Logo" width="90px" height="auto" class="img-fluid">
+            </div>
+            <div class="footer-col justify-content-center align-self-center">
+                    <ul class="d-flex flex-row">
+                        <li class="p-2">
+                            <a href="#home">Home</a>
+                        </li>
+                        <li class="p-2">
+                            <a href="#services">Services</a>
+                        </li>
+                        <li class="p-2">
+                            <a href="#projects">Projects</a>
+                        </li>
+                        <li class="p-2">
+                            <a href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                
             </div>
             <div class="footer-col">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, repudiandae.</p>
+                <div class="contact-socials">
+                    <span>
+                        <a href="https://linkedin.com/in/ta11ystan">
+                            <i class="fa-brands fa-linkedin-in fa-lg"></i>
+                        </a>
+                    </span>
+                    <span>
+                        <a href="https://github.com/tam-114">
+                            <i class="fa-brands fa-github fa-lg"></i>
+                        </a>
+                    </span>
+                    <span>
+                        <a href="https://twitter.com/@ta11ystan">
+                            <i class="fa-brands fa-twitter fa-lg"></i>
+                        </a>
+                    </span>
+                </div> <!--end contact-socials-->
+                <p class="d-flex align-self-end justify-self-end text-end pe-2 copyright">All Rights Reserved | Taystan &copy;</p>
             </div>
-            <div class="footer-col">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, et!</p>
-            </div>
+            
         </div>
     </footer>
 
     <!-- Bottom of page -->
     <div class="social-icons">
         <ul class="ps-0">
-            <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
-            <li><a href="#"><i class="fa-brands fa-github"></i></a></li>
-            <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+            <li><a href="https://linkedin.com/in/ta11ystan"><i class="fa-brands fa-linkedin-in"></i></a></li>
+            <li><a href="https://github.com/tam-114"><i class="fa-brands fa-github"></i></a></li>
+            <li><a href="https://twitter.com/@ta11ystan"><i class="fa-brands fa-twitter"></i></a></li>
         </ul>
     </div>
     <!-- End social icons/page, change icons to footer when on mobile, adjust spacing -->
