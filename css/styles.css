@@ -421,7 +421,7 @@ ul {
     width: 50px;
     border: 2px solid transparent;
     border-radius: 50%;
-    /* background-color: #000; */
+    display: inline;
 }
 
 .play-btn-inner i {
@@ -431,6 +431,9 @@ ul {
     color: black;
 }
 
+.play-btn-inner i:hover {
+    color: var(---orange);
+}
 
 /* Services 3-column */
 .services-row {
