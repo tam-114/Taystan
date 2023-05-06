@@ -9,6 +9,7 @@
     ---copper : #CD8B76;
     ---dark-blue: #2B4162;
     ---dark-brown: #312509;
+    
 }
 
 
@@ -529,10 +530,34 @@ ul {
     background-color: var(---orange);
 }
 
+/* .btn-project:visited {
+    color: var(---white);
+    background-color: var(---dark-brown);
+} */
+
 p.padding {
     padding: 20px 0 20px 0;
 }
 
+.projects-card {
+    border-radius: 10px;
+    border: 1px solid #312509;
+    background-color: #7e5245;
+}
+
+.card-bg-color {
+    background-color:#7e5245;
+}
+
+.card-bg-color-text {
+    color: white;
+}
+
+.project-card-img {
+    position: relative;
+    /* right: -33px; */
+    /* ^End of card */
+}
 /* Form */
 
 /* .contact-form {
