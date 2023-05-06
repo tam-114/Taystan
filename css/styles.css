@@ -458,6 +458,7 @@ ul {
     font-size: 20px;
     color: var(---orange);
     font-weight: 700;
+    padding: 8px;
 }
 
 .services-column p {
@@ -633,6 +634,11 @@ input[type="submit"]:hover {
     margin: 3em auto;
 }
 
+.contact-info {
+    padding: 20px;
+    text-align: center;
+}
+
 form {
     background-color: var(---white);
     padding-top: 40px;
@@ -642,6 +648,7 @@ form {
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
     border-radius: 3px;
     overflow: hidden;
+    border-radius: 10px;
 }
 
 .required-star {
@@ -678,10 +685,7 @@ textarea {
     flex: 50%;
 }
 
-.contact-info {
-    padding: 20px;
-    text-align: center;
-}
+
 
 .contact-subtitle {
     text-transform: uppercase;
