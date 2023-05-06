@@ -9,6 +9,7 @@
     ---copper : #CD8B76;
     ---dark-blue: #2B4162;
     ---dark-brown: #312509;
+    ---green: #9CAF88;
     
 }
 
@@ -539,6 +540,7 @@ p.padding {
     padding: 20px 0 20px 0;
 }
 
+/* Black Therapist & Company */
 .projects-card {
     border-radius: 10px;
     border: 1px solid #312509;
@@ -547,6 +549,29 @@ p.padding {
 
 .card-bg-color {
     background-color:#7e5245;
+}
+
+/* Eastburn Trucking & Logistics */
+
+.projects-card2 {
+    border-radius: 10px;
+    border: 1px solid #2B4162;
+    background-color: #2B4162;
+}
+
+.card-bg-color2 {
+    background-color:#2B4162;
+}
+
+/* PTR Staffing */
+.projects-card3 {
+    border-radius: 10px;
+    border: 1px solid #9CAF88;
+    background-color: #9CAF88;
+}
+
+.card-bg-color3 {
+    background-color:#9CAF88;
 }
 
 .card-bg-color-text {
@@ -661,6 +686,7 @@ textarea {
 .contact-subtitle {
     text-transform: uppercase;
     font-size: 12px;
+    font-weight: 700;
     color: var(---orange);
     /* padding-bottom: 10px; */
 }
