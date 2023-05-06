@@ -244,6 +244,10 @@ ul {
     color: var(---orange);
 }
 
+.navbar-light .navbar-nav .nav-link:hover {
+    color: var(---orange);
+}
+
 .logo img {
     margin-left: 100px;
     width: 78px;
