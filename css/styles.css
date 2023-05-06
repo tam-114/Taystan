@@ -167,7 +167,7 @@ ul {
     }
 
     .pt-xs {
-        padding-top: 20px;
+        padding-top: 60px;
     }
 
  }
@@ -311,7 +311,34 @@ ul {
     /* font-style: italic; */
 }
 
+@media screen and (min-width: 406px) {
+    .project {
+        position: relative;
+    }
 
+    .project-draw-img {
+        position: relative;
+        z-index: 1;
+        bottom: -53px;
+    }
+
+    .c-title {
+        left: -58px;
+        z-index: 2;
+    }
+}
+
+@media screen and (max-width: 406px) {
+    .c-title {
+        top: -22px;
+        right: -70px;
+    }
+    .project-draw-img {
+        position: relative;
+        bottom: -138px;
+        left: -69px;
+    }
+}
 
 .app-text h3 {
     /* margin-top: 100px; */
@@ -553,6 +580,8 @@ p.padding {
     border-radius: 10px;
     border: 1px solid #312509;
     background-color: #7e5245;
+    position: relative;
+    z-index: 2;
 }
 
 .card-bg-color {
@@ -633,6 +662,13 @@ input[type="submit"]:hover {
     background-color: var(---orange);
 }
 
+.contact-title {
+    font-family: 'Nunito', sans-serif;
+    font-size: 45px;
+    font-weight: 600;
+    position: relative;
+}
+
 .contact-container {
     display: flex;
     /* align-items: center;
@@ -642,8 +678,14 @@ input[type="submit"]:hover {
 }
 
 .contact-info {
-    padding: 20px;
+    padding: 15px;
     text-align: center;
+}
+
+.contact-draw-img {
+    position: relative;
+    left: -36px;
+    bottom: -26px;
 }
 
 form {
