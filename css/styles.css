@@ -20,7 +20,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Nunito', sans-serif;
-    background-color: var(--background);
+    /* background-color: var(--background); */
 }
 
 html {
@@ -320,6 +320,7 @@ ul {
         position: relative;
         z-index: 1;
         bottom: -53px;
+        left: 15px;
     }
 
     .c-title {
@@ -507,7 +508,7 @@ ul {
     position: fixed;
     right: 0;
     top: 200px;
-    z-index: 1;
+    z-index: 3;
     background-color: transparent!important;
 }
 
@@ -526,7 +527,7 @@ ul {
 }
 
 .social-icons ul li a:hover {
-    color: var(---dark-blue);
+    color: var(---orange);
 }
 
 /* Projects */
