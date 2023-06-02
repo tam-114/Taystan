@@ -585,7 +585,7 @@ p.padding {
     z-index: 2;
 }
 
-.card-bg-color {
+.card-bg-brown {
     background-color:#7e5245;
 }
 
@@ -597,7 +597,7 @@ p.padding {
     background-color: #2B4162;
 }
 
-.card-bg-color2 {
+.card-bg-blue {
     background-color:#2B4162;
 }
 
@@ -608,7 +608,7 @@ p.padding {
     background-color: #5f6855;
 }
 
-.card-bg-color3 {
+.card-bg-green {
     background-color:#5f6855;
 }
 
@@ -620,6 +620,16 @@ p.padding {
     position: relative;
     /* right: -33px; */
     /* ^End of card */
+}
+
+.projects-card4 {
+    border-radius: 10px;
+    border: 1px solid #610101;
+    background-color: #610101;
+}
+
+.card-bg-red {
+    background-color: #610101;
 }
 /* Form */
 
