@@ -631,6 +631,11 @@ p.padding {
 .card-bg-red {
     background-color: #610101;
 }
+
+.card-bg-purple {
+    background-color: #8a4c6f;
+}
+
 /* Form */
 
 /* .contact-form {
