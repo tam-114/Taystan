@@ -30,6 +30,7 @@ html {
 }
 
 body {
+    overflow-x: hidden!important;
     background-color: var(--background);
 }
 
@@ -584,6 +585,10 @@ p.padding {
     background-color: #7e5245;
     position: relative;
     z-index: 2;
+}
+
+.card-bg-transparent {
+    background: transparent;
 }
 
 .card-bg-brown {
