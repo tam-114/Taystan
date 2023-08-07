@@ -53,12 +53,13 @@ ul {
     background-repeat: no-repeat, no-repeat;
     background-size: 520px 450px, 520px 450px;
 } */
-
-#flower-bg {
-    background-image: url(../images/cherry-blossom-filled-op50.png), url(../images/cherry-blossom-filled-op50.png), url(../images/cherry-blossom-filled-op50.png);
-    background-position: 25% 1%, 0% 93%, 87% 11%;
-    background-repeat: no-repeat, no-repeat, no-repeat;
-    background-size: 350px 270px, 350px 270px, 520px 450px;
+@media screen and (min-width: 992px) {
+    #flower-bg {
+        background-image: url(../images/cherry-blossom-filled-op25.png), url(../images/cherry-blossom-filled-op25.png), url(../images/cherry-blossom-filled-op25.png);
+        background-position: 25% 1%, 0% 93%, 87% 11%;
+        background-repeat: no-repeat, no-repeat, no-repeat;
+        background-size: 350px 270px, 350px 270px, 520px 450px;
+    }
 }
 
 /* ------- Media Queries ------- */
