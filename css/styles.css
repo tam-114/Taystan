@@ -750,6 +750,10 @@ input[type="submit"]:hover {
     bottom: -26px;
 }
 
+.contact-text {
+    font-size: 1rem;
+}
+
 form {
     background-color: var(---white);
     padding-top: 40px;
@@ -900,4 +904,12 @@ li a:hover {
     position: absolute;
     bottom: 0;
     right: 0;
+}
+
+#submitButton {
+    transition: background-color 1s;
+  }
+
+.copy-name {
+    font-size: 14px;
 }

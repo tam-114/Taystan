@@ -390,14 +390,14 @@
                             <label class="label-text">
                                 First & Last Name:
                                 <br>
-                                <input type="text" name="name" class="form-control">
+                                <input type="text" name="name" class="form-control" required>
                             </label>
                             <br>
                             <br>
                             <label class="label-text">
                                 Email Address:
                                 <br>
-                                <input type="email" name="email" class="form-control">
+                                <input type="email" name="email" class="form-control" required>
                             </label>
                             <br>
                             <br>
@@ -407,7 +407,7 @@
                                 <textarea name="message" placeholder=" Hi Taylor..." class="form-control"></textarea>
                             </label>
                             <!-- your other form fields go here -->
-                            <input type="submit"></input>    
+                            <input type="submit" id="submitButton"></input>    
                         </form>
                     </div>
                 </div><!--end contact-col 2-->
@@ -455,14 +455,27 @@
                     </a>
                 </span>
             </div> <!--end contact-socials-->
-            <p class="text-center mb-0">Email: taylor.stanley@taystan.dev</p>
-
+            <div class="d-flex align-items-lg-start align-items-center flex-column pt-3 pt-lg-3">
+                <p class="mb-2 contact-text"><i class="fa-solid fa-phone pe-1 fa-xs"></i> (407) 434 - 9422</p>
+                <p class="mb-2 contact-text"><i class="fa-solid fa-envelope pe-1 fa-xs"></i> taylor.stanley@taystan.dev</p>
+                <p class="mb-0 contact-text text-center text-lg-start"><i class="fa-solid fa-location-dot pe-1 fa-xs"></i> 1032 E Brandon Blvd #5422,<br>Brandon, FL 33511</p>
+            </div>
+            
         </div>
     </div>
-    </footer>
-    <div class="d-flex justify-content-lg-end align-items-lg-end justify-content-center align-items-center flex-row">
-        <p class="pe-lg-4">All Rights Reserved | Taystan 2023 ©</p>
+
+    <div class="d-flex justify-content-center align-items-center flex-md-row flex-column mb-4">
+        <div class="d-flex flex-row">
+            <a href="terms_conditions.html" class="copy-name ps-2 pe-2" target="_blank">Terms & Conditions</a>
+            <span class="copy-name pe-2">/</span>
+            <a href='privacy_policy.html' class="copy-name pe-md-5" target="_blank">Privacy Policy</a>
+        </div>
+        <p class="copy-name mb-0">All Rights Reserved | Taystan Design, LLC © 2023</p>
     </div>
+    </footer>
+    <!-- <div class="d-flex justify-content-lg-end align-items-lg-end justify-content-center align-items-center flex-row">
+        <p class="pe-lg-4">All Rights Reserved | Taystan 2023 ©</p>
+    </div> -->
     
     <!-- Bottom of page -->
     <div class="social-icons d-none d-xl-block">
