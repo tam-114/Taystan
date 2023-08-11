@@ -667,6 +667,7 @@ ul.bullets li {
 
 ul.bullets {
     list-style: none;
+    text-align: left;
   }
   
 ul.bullets li::before {
