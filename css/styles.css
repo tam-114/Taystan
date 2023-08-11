@@ -657,6 +657,31 @@ p.padding {
     background-color: #8a4c6f;
 }
 
+/* ul.bullets {
+    list-style-type: circle;
+} */
+
+ul.bullets li {
+    color: white;
+}
+
+ul.bullets {
+    list-style: none;
+  }
+  
+ul.bullets li::before {
+    content: "\2022";
+    color: var(---orange);
+    font-weight: bold;
+    display: inline-block; 
+    width: 1em;
+    margin-left: -1em;
+}
+
+.c-orange {
+    color: var(---orange);
+}
+
 /* Form */
 
 /* .contact-form {
