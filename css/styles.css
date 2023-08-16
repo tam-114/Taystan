@@ -637,6 +637,14 @@ p.padding {
     color: white;
 }
 
+p.card-bg-color-text, span.card-bg-color-text {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    text-align: left;
+}
+
 .project-card-img {
     position: relative;
     /* right: -33px; */
@@ -681,6 +689,7 @@ ul.bullets li::before {
 
 .c-orange {
     color: var(---orange);
+    display: flex;
 }
 
 /* Form */
