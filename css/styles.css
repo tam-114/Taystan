@@ -76,8 +76,8 @@ ul {
     } */
 
     .app-text {
-        width: 80%!important;
-        padding-left: 0px!important;
+        width: 100%;
+        padding-left: 40px;
     }
 
     .app-picture img {
