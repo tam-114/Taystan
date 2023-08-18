@@ -774,6 +774,7 @@ form {
     border-radius: 3px;
     overflow: hidden;
     border-radius: 10px;
+    width: calc(100% + 10px);
 }
 
 .required-star {
