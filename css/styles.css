@@ -910,6 +910,11 @@ li a:hover {
     background-color: var(---dark-gray);
 }
 
+a p.contact-text:hover {
+    text-decoration: none;
+    color: var(---orange);
+}
+
 .copyright {
     position: absolute;
     bottom: 0;
