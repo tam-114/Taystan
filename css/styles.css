@@ -743,7 +743,7 @@ ul.bullets li::before {
 }
 
 .price {
-    font-weight: 600;
+    font-weight: 700;
     color: var(---orange);
     margin-bottom: 0;
     padding-bottom: 0;
