@@ -703,23 +703,88 @@ ul.bullets li::before {
     display: flex;
 }
 
-/* Form */
+/* Pricing Plans */
+.price-card {
+    background-color: var(---white);
+    /* margin: 20px 40px 40px 40px; */
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    border-radius: 3px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+@media screen and (min-width: 768px) {
 
-/* .contact-form {
-    margin-top: 10%;
-} */
-
-
-/* label {
-    padding: 10px 0 10px 0;
+    .price-card {
+        margin: 20px 40px 40px 40px;
+    }
 }
 
-input, textarea {
-    width: 600px;
-    border: 1px solid var(---gray);
-    border-radius: 10px;
-} */
+.btn-price {
+    border-radius: 20px;
+    padding: 10px;
+    text-decoration: none;
+    color: var(---black);
+    cursor: pointer;
+    background-color: var(---orange)
+}
 
+.btn-price:hover {
+    /* color: var(---white); */
+    background-color: var(---orange);
+    opacity: 0.8;
+}
+
+.price-card-bg {
+    background: #ECD7A7;
+    width: 100%;
+    display: block;
+    text-align: center;
+    padding: 15px;
+}
+
+.price {
+    font-weight: 600;
+    color: var(---orange);
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.landing-title {
+    font-size: 24px;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    vertical-align: middle;
+    padding-left: 10px;
+}
+
+.landing-pg-icon {
+    display: inline;
+    vertical-align: middle;
+}
+
+.multiple-pg-icon {
+    position: relative;
+    vertical-align: middle;
+}
+
+.multi-pg-right {
+    transform: translate(20px, 6px);
+    opacity: 0.4;
+}
+
+.pricing-items p {
+    border-bottom: 1px solid rgb(205, 205, 205, 0.5);
+    height: 40px;
+}
+
+/* FAQ */
+@media screen and (min-width: 992px) {
+    .faq-line {
+        border-right: 1px solid var(---orange);
+    }
+}
+
+/* Form */
 
 .label-text {
     font-weight: 700;
