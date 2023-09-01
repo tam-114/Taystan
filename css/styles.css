@@ -1042,3 +1042,8 @@ ul.update-ul li{
     position: relative;
     text-align: center;
 }
+
+.inline-link {
+    text-decoration: underline;
+    color: var(---orange);
+}
