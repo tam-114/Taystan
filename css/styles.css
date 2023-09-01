@@ -1009,3 +1009,37 @@ a p.contact-text:hover {
 .copy-name {
     font-size: 14px;
 }
+
+
+
+ul.update-ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+ul.update-ul li{
+    padding: 10px;
+}
+
+.updates-hrs {
+    color: var(---orange);
+    font-size: 22px;
+    font-style: italic;
+}
+
+.updates-title {
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 600;
+    position: relative;
+    text-align: center;
+}
+
+.updates-name {
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    position: relative;
+    text-align: center;
+    
+}
