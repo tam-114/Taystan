@@ -676,6 +676,10 @@ p.card-bg-color-text, span.card-bg-color-text {
     background-color: #8a4c6f;
 }
 
+.card-bg-darkblue {
+    background-color: #07263C;
+}
+
 /* ul.bullets {
     list-style-type: circle;
 } */
@@ -715,7 +719,7 @@ ul.bullets li::before {
 @media screen and (min-width: 768px) {
 
     .price-card {
-        margin: 20px 40px 40px 40px;
+        margin: 10px 20px 20px 20px;
     }
 }
 
@@ -1047,3 +1051,8 @@ ul.update-ul li{
     text-decoration: underline;
     color: var(---orange);
 }
+
+.fa-check:before {
+    color: green;
+}
+
