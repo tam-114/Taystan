@@ -30,7 +30,7 @@ html {
 }
 
 body {
-    overflow-x: hidden!important;
+    /* overflow-x: hidden!important; */
     background-color: var(--background);
 }
 
@@ -285,7 +285,7 @@ ul {
     font-size: 19px;
     font-weight: 700;
     cursor: pointer;
-    border-radius: 30px;
+    border-radius: 10px;
     background-color: var(---gray);
     padding: 8px 40px;
     margin-right: 100px;
@@ -414,9 +414,9 @@ ul {
     font-size: 15px;
     font-weight: 700;
     cursor: pointer;
-    border-radius: 30px;
+    border-radius: 10px;
     background-color: var(---orange);
-    padding: 15px 30px;
+    padding: 15px 15px;
     width: 200px;
     /* margin-right: 100px; */
     color: var(---black);
@@ -447,7 +447,12 @@ ul {
 .btn-group .play-btn {
     /* margin-left: 40px; */
     display: inline-flex;
+    border: 1px solid #000;
+    border-radius: 10px;
+    padding: 15px 20px;
+    vertical-align: middle;
 }
+
 
 .play-btn:hover {
     color: var(---orange);
@@ -457,7 +462,7 @@ ul {
     color: var(---black);
     font-size: 15px;
     font-weight: 700;
-    margin: auto 20px;
+    margin: 0 auto;
     cursor: pointer;
 }
 
@@ -484,7 +489,17 @@ ul {
     color: var(---orange);
 }
 
+@media screen and (min-width: 768px) {
+    .hero-img {
+        width: 60%;
+    }
+}
+
 /* Services 3-column */
+.bg-services {
+    background-color: #DBB4AB;
+}
+
 .services-row {
     display: flex;
     align-content: center;
@@ -559,6 +574,41 @@ ul {
 }
 
 /* Projects */
+@media screen and (min-width: 768px) {
+    .projects-scroll {
+        overflow: auto;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .projects-card {
+        width: 1200px;
+        /* height: auto; */
+        height: 900px;
+    }
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 20px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: var(---orange); 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(---orange); 
+  }
 
 .projects-img {
     max-width: 100%;
@@ -582,7 +632,7 @@ ul {
 }
 
 .btn-project {
-    border-radius: 20px;
+    border-radius: 10px;
     padding: 10px;
     text-decoration: none;
     color: var(---black);
@@ -1056,3 +1106,43 @@ ul.update-ul li{
     color: green;
 }
 
+.contact-banner {
+    background-color: #C26148;
+    min-width: 100px;
+    padding: 60px;
+    background-image: url("/images/cherry-blossom-filled-op50.png");
+    background-position: 62% 28%;
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+
+.contact-banner-text {
+    color: white;
+}
+
+.contact-banner-btn {
+    color: #FFF;
+    text-align: center;
+    font-family: Nunito;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    border-radius: 20px;
+    border: 1px solid #FFF;
+    background: rgba(201, 201, 188, 0.00);
+    padding: 15px;
+}
+
+a.contact-banner-btn:hover {
+    opacity: 0.8;
+    color: white;
+}
+
+.color-white {
+    color: #FFF;
+}
+
+.color-black {
+    color: #000;
+}
